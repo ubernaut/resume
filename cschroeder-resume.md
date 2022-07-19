@@ -32,6 +32,7 @@ Virtual Reality, Open Source Infrastructure, Infrastructure as code, Terraform, 
 ## Technology with past experience
 ### Languages frameworks and libraries  
 JavaScript, Node.js, React, Python, C#, ColdFusion, SQL, HTML, WebGL, CSS,  jQuery, AJAX, .NET MVC, C,  C++, Bash, JSON,  XML, PyOpencl, PyCuda, Panda3D, OpenGL, MS Batch, AutoLisp, CFWheels, Bottle.py, Flask.py, pyGNOME  
+
 ### Databases  
 PostgreSQL, MySQL, MS SQL Server, SQLite, Oracle, SQL Server Integration Services,
 
