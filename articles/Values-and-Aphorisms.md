@@ -1,5 +1,4 @@
-## Reflecting on Values and Aphorisms
-This is a collection of pithy things I've learned over the years.
+## A collection of pithy things I've learned over 15 years of software projects
 
 Work somewhere or do something you can be passionate about. Passion will get you to work early and eager, then keep you focused for years. There is no substitute for the never ending well of tenacity and grit that comes from really caring about your work.  This attitude is infectious and success will flow easily when you have it directed properly.
 
@@ -51,10 +50,12 @@ Don't allow yourself to be responsible for things over which you have no control
 
 ### still here?
 
-I'm looking for a leadership role on an ambitious team who is anticipating how current trends and technology will shape the world. Manifest your dreams!
+I'm looking for a leadership role on an ambitious team who is anticipating how current trends and technology will shape the world. Let's manifest the future!
 
-I work best in areas I can be passionate, for leaders with ambitious vision, in organizations where top performers have latitude.  
+I work best in domains I am passionate, for leaders with ambitious vision, and in organizations where top performers have latitude.   
 
-I'm interested in VR, WebXR, WebGPU, Web3, distributed computing, crypto, decentralized services and protocols, computational physics, Open Source, entrepreneurship, aerospace, and rocking the boat.
+I like working on projects simultaneously, where I am creating and developing demos into full featured products.
 
-https://www.linkedin.com/in/collin-schroeder-b0a8909/
+I'm extra interested in VR, WebXR, WebGPU, Web3, distributed computing, crypto, decentralized services and protocols, computational physics, Open Source, entrepreneurship, aerospace, and rocking the boat.
+
+https://github.com/ubernaut/resume
