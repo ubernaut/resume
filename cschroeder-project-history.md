@@ -1,6 +1,6 @@
 ---
 fontfamily: bookman
-geometry: margin=2cm
+geometry: margin=1cm
 ---
 
 # Project History
@@ -15,7 +15,7 @@ Leading a large team from Amazon and multiple contractors tasked with migrating 
 
 #### 360 Camera Implementation  
 - ***Team Lead, Sr. Software Engineer, Network Engineer, Software Architect***  
-Lead a small team and implemented a new 360 degree camera system for the FAA Weather Camera Program. This project required a broad range of skills: researching and testing new cameras, design of ground up camera systems,  integration of those systems into FAA control electronics, low latency video encoding, data transmission over cellular networks,  browser based WebGL reprojection of live video feeds to improve image quality, and developing a new web based interface for viewing the data feed. https://faa-aviation-data-portal.github.io/360-cam/panorama-viewer/
+Lead a small team and implemented a new 360 degree camera system for the FAA Weather Camera Program. This project required a broad range of skills: researching and testing new cameras, design of ground up camera systems,  integration of those systems into FAA control electronics, low latency video encoding, data transmission over cellular networks,  browser based WebGL reprojection of live video feeds to improve image quality, and developing a new web based interface.
 
 ##### AvCams Plus  
 - ***Sr. Software Engineer, Project Manager, Software Architect***  
