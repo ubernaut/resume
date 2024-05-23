@@ -1,0 +1,16 @@
+{
+    "name": "simple-template",
+    "short_name":"app",
+//    "start_url":"https://ubernaut.github.io/",
+    "display": "standalone",
+    "description": "A simple interval timer.",
+    "background_color":"black",
+    "theme_color": "black",
+    "icons": [
+      {
+        "src": "../images/icon.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      }
+    ]
+  }
