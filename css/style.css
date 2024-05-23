@@ -160,6 +160,13 @@
 .crt {
     animation: textShadow 1.6s infinite;
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
+    
+}
+.light {
+background-color: white;
+    color: black;
+}
+.dark {
+  background-color: black;
     color: lightgreen;
 }

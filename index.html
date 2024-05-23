@@ -2,15 +2,17 @@
 <html>
     <head>
         <link rel="shortcut icon" type="image/jpg" href="images/fav.ico"/>
-
-        <!-- <link rel="manifest" href="js/manifest.json" />
-        <script src = "js/serviceworker.js"></script> -->
+        <link rel="manifest" href="js/manifest.json" />
+        <script src = "js/serviceworker.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="module" src="js/app.js"></script>    
         <title>Colin Schroeder</title>
     </head>
-<body class="crt">
+<body id="body" class="crt dark">    
 <div>
+    <h1 id="toggleDark" style="text-align: right;"> 
+        <a style="cursor: pointer;" onclick="window.toggleDark()" title="toggle light/dark mode">☼</a>
+    </h1>
 <h2>Colin Schroeder - Software Engineering Manager</h2>
 <h2>Education &amp; Experience</h2>
 <ul>
