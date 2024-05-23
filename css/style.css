@@ -159,14 +159,107 @@
 }
 .crt {
     animation: textShadow 1.6s infinite;
-    font-family: 'Courier New', Courier, monospace;
-    
 }
+
+@font-face {
+    font-family: "Gohu";
+    src: url("GohuFont14NerdFontMono-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "typewriter";
+    src: url("JMHTypewriter.ttf") format("truetype");
+}
+
 .light {
+  font-family: 'typewriter';
+  /* background: radial-gradient(circle at calc(50% + 12vmin) calc(50% - 4vmin), #fff 29vmin, #eee); */
 background-color: white;
     color: black;
 }
 .dark {
+   font-family: 'Gohu';
   background-color: black;
     color: lightgreen;
 }
+
+#togglebtn {
+  cursor: pointer; 
+  position:fixed; 
+  top:0px;
+  right:0px;
+}
+#togglebtn h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+section {
+  width: 40vmin;
+  aspect-ratio: 1;
+  position: absolute;
+}
+
+section *,
+section *::before,
+section *::after {
+  position: absolute;
+  box-sizing: border-box;
+}
+.stain {
+  position: fixed;
+  opacity: 0.35;
+  left: 50%;
+  top: 50%;
+  filter: sepia(200%) brightness(360%) contrast(130%) hue-rotate(-15deg) grayscale(20%);
+  background: #eee;
+  mix-blend-mode: darken;
+  -webkit-mask:
+    radial-gradient(farthest-side at 25% 40%, #000 20%, #0000 45%),
+    radial-gradient(#0004, #0000) 10% 25% / 17% 21%,
+    radial-gradient(#0006, #0000) 30% 30% / 20% 20%,
+    radial-gradient(#000c, #0000),
+    radial-gradient(farthest-side, #0000 80%, #000)
+}
+
+.main-stain {
+    position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 70% 20%, #00f 10%, #0000 0),
+    radial-gradient(circle at 81% 40%, #00f 6%, #0000 0),
+    radial-gradient(circle at 20% 20%, #00f 6%, #0000 0),
+    #fff
+    ;
+  box-shadow: 
+    inset 5vmin -0.75vmin 0 -2.75vmin #006,
+    inset -1vmin -1vmin blue,
+    inset -1.5vmin 2.5vmin blue,
+    1vmin 2vmin blue,
+    -1vmin 2vmin 0 -1vmin blue,
+    0 0 0 16vmin #fff;
+  filter: blur(1.5vmin) contrast(500);
+  
+}
+
+.splash-stain {
+  width: 12vmin;
+  aspect-ratio: 1;
+  background:
+    repeating-conic-gradient(#00f 0 3%, #0000 0 11%),
+    repeating-conic-gradient(#0000 0 5%, #00f 0 7%) 50% / 60% 60%,
+    repeating-conic-gradient(#0000 0 7%, #00f 0 9%) 50% / 70% 70%,
+    repeating-conic-gradient(#0000 0 11%, #00f 0 13%) 50% / 80% 80%,
+    radial-gradient(#00f 22%, #0000 0),
+    #fff;
+  background-repeat: no-repeat;
+  filter: blur(0.78vmin) contrast(50) drop-shadow(0 0 0.75vmin #f008);
+  box-shadow: 0 0 0 6vmin #fff;
+  mix-blend-mode: darken;
+  top: -1%;
+  left:63%;
+  border-radius: 50%
+} 
