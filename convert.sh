@@ -20,7 +20,7 @@ grep -vwE "(<h2>geometry: margin=1cm</h2>)" outdex.html > index.html;
 
 rm outdex.html;
 
-echo '</div></body></html>'>>index.html;
+cat docs/suffix.html>>index.html;
 
 mv index.html docs;
 mv *.pdf output;
