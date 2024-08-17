@@ -1,16 +1,16 @@
+#Resume Builder 
 
-## Here's my Resume:
-https://github.com/ubernaut/resume/blob/main/cschroeder-resume.pdf
+view output here:
 
-## Project History:
-https://github.com/ubernaut/resume/blob/main/cschroeder-project-history.pdf
+https://ubernaut.github.io/resume/ 
 
-## and articles:
-https://github.com/ubernaut/resume/blob/main/articles/ 
+This is a markdown to pdf and html resume pipeline. 
 
-## to install and run this yourself (ubuntu):
+I use this to convert markdown files which contain my resume, employment history, and project history into both PDF and HTML formats for distribution. 
 
-### dependencies:
-sudo apt install pandoc texlive-latex texlive-latex-extra pdftk
+##deps:
+sudo apt install pandoc texlive-latex texlive-latex-extra pdftk markdown texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
-then edit the convert.sh to reflect your own filenames. 
+## to use:
+
+sh conver.sh
