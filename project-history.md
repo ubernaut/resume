@@ -14,27 +14,27 @@ geometry: margin=1cm
 
 ## FAA & Leidos
 
-#### 360 Camera Implementation (FAA and Leidos)
+#### 360 Camera Implementation
 
 - **_Team Lead, Sr. Software Engineer, Network Engineer, Software Architect_**  
   Lead a small team and implemented a new 360 degree camera system for the FAA Weather Camera Program. This project required a broad range of skills: researching and testing new cameras, design of ground up camera systems, integration of those systems into FAA control electronics, low latency video encoding, data transmission over cellular networks, browser based WebGL reprojection of live video feeds to improve image quality, and developing a new web based interface.
 
-##### AvCams Plus (FAA and Leidos)
+##### AvCams Plus
 
 - **_Sr. Software Engineer, Project Manager, Software Architect_**  
   Lead the team charged with building AvCamsPlus https://weathercams.faa.gov the successor to https://avcams.faa.gov (now redirected). AvCamsPlus is a Progressive Web Application running on Google Cloud Platform and built with Postgres, Node.js, and React. The goal of this project was to use modern technologies and web based standards to create a cutting edge, responsive website to keep pilots informed in order for them to make the safest decisions possible. AvCamsPlus imports and displays large amounts of data from external sources including the NWS, FAA, and Google Maps. This project required extensive knowledge of GIS, emerging web standards, as well as long term project planning and execution experience.
 
-#### Google Cloud Serverless Migration (FAA and Leidos)
+#### Google Cloud Serverless Migration
 
 - **_Sr. Software Engineer, Network Engineer, Software Architect_**  
   Led the team which converted AvCams Plus to a serverless architecture, eliminating a significant amount of maintenance overhead by using the Google App Engine instead of virtual machines. The serverless migration also enabled automatic scaling of the infrastructure.
 
-#### Maintenance Console (FAA and Leidos)
+#### Maintenance Console
 
 - **_Sr. Software Engineer, Software Architect_**  
   Leading the team tasked with marshaling the existing Weather Camera Program digital infrastructure, performing integrations between disparate apps and establishing a Continuous Integration pipeline to prevent interruption of services and enable continuous operation of the software through the development process. This project is ongoing and requires experience maintaining and extending legacy applications, as well as working closely with all stakeholders to ensure nothing is overlooked.
 
-#### PIREPS (FAA and Leidos)
+#### PIREPS
 
 - **_Sr. Software Engineer, Team Lead_**  
   Lead a small team of developers who created two new interfaces for submitting Pilot Reports. These interfaces solved multiple issues related to data quality and input validation. One version is a desktop focused interface aimed at providing the full extent of PIREP input options. The second version is a mobile focused app with many innovations aimed at simplifying the process of creating a PIREP and inventing many new custom user interface controls to enable completion of a PIREP using only one hand.
@@ -55,7 +55,7 @@ geometry: margin=1cm
 - **_Administrator / Architect (Duration 1 year)_**  
   Used GeoServer to support rapid delivery of imagery via the WMS protocol as the backend of a web based satellite mapping application supporting mobile devices. This mobile site for MapOptix (http://www.geonorth.com/products/mapoptix) provided rapid access to large imagery data-sets minutes after collection by satellite. WMS is also compatible with popular apps like Google Earth and ArcMap. Geoserver was Installed on a Linux VM. This role requires skills in image processing, mobile data optimization, performance tuning, network administration, Python and Bash scripting. The host machine receives imagery directly from the Satellite at our Digital Receiver Station. Python scripts running on the host machine are used to archive data and send out alerts when new imagery arrives. A script and Samba shared drive is used to transfer imagery between the host and VM. The raw imagery is then processed into image pyramids using the GDAL toolkit and imported into our GeoServer instance.
 
-### Confidential Client
+#### Confidential Client
 
 #### Mobile Application Under NDA
 
