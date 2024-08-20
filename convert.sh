@@ -1,9 +1,5 @@
 #!/bin/#!/usr/bin/env bash
 
-#dependencies:
-
-#sudo apt install pandoc texlive-latex texlive-latex-extra pdftk markdown texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
-
 pandoc -s resume.md -o resume.pdf;
 pandoc -s employment-history.md -o employment-history.pdf;
 pandoc -s project-history.md -o project-history.pdf;

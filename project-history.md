@@ -19,15 +19,15 @@ geometry: margin=1cm
 - **_Team Lead, Sr. Software Engineer, Network Engineer, Software Architect_**  
   Lead a small team and implemented a new 360 degree camera system for the FAA Weather Camera Program. This project required a broad range of skills: researching and testing new cameras, design of ground up camera systems, integration of those systems into FAA control electronics, low latency video encoding, data transmission over cellular networks, browser based WebGL reprojection of live video feeds to improve image quality, and developing a new web based interface.
 
-##### AvCams Plus
+##### WeatherCams
 
 - **_Sr. Software Engineer, Project Manager, Software Architect_**  
-  Lead the team charged with building AvCamsPlus https://weathercams.faa.gov the successor to https://avcams.faa.gov (now redirected). AvCamsPlus is a Progressive Web Application running on Google Cloud Platform and built with Postgres, Node.js, and React. The goal of this project was to use modern technologies and web based standards to create a cutting edge, responsive website to keep pilots informed in order for them to make the safest decisions possible. AvCamsPlus imports and displays large amounts of data from external sources including the NWS, FAA, and Google Maps. This project required extensive knowledge of GIS, emerging web standards, as well as long term project planning and execution experience.
+  Lead the team charged with building WeatherCams [weathercams.faa.gov](https://weathercams.faa.gov). WeatherCams is a Progressive Web Application running on Google Cloud Platform and built with Postgres, Node.js, and React. The goal of this project was to use modern technologies and web based standards to create a cutting edge, responsive website to keep pilots informed in order for them to make the safest decisions possible. WeatherCams imports and displays large amounts of data from external sources including the NWS, FAA, and Google Maps. This project required extensive knowledge of GIS, emerging web standards, as well as long term project planning and execution experience.
 
 #### Google Cloud Serverless Migration
 
 - **_Sr. Software Engineer, Network Engineer, Software Architect_**  
-  Led the team which converted AvCams Plus to a serverless architecture, eliminating a significant amount of maintenance overhead by using the Google App Engine instead of virtual machines. The serverless migration also enabled automatic scaling of the infrastructure.
+  Led the team which converted WeatherCams to a serverless architecture, eliminating a significant amount of maintenance overhead by using the Google App Engine instead of virtual machines. The serverless migration also enabled automatic scaling of the infrastructure.
 
 #### Maintenance Console
 
