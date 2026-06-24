@@ -7,6 +7,18 @@ geometry: margin=1cm
 
 ## FAA
 
+#### AAC (Alaska Automation Capability))
+
+- **_Software SME, Implementation_**
+  The Alaska Automation Capability (AAC) is a Federal Aviation Administration (FAA) initiative designed to modernize the software and technical infrastructure of Alaska's Flight Service Stations. Conducted as part of the broader plan for a Brand-New Air Traffic Control System (BNATCS), its primary objective is to replace the state's highly vulnerable, legacy Operational and Supportability Implementation System (OASIS) with a secure, web-based cloud automation network.
+
+
+#### AFSFM (Alaska Flight Service Facility Modernization)
+
+- **_Program Manager, GTI_**
+  The Alaska Flight Service Facility Modernization (AFSFM) program, is a Federal Aviation Administration infrastructure project focused on rehabilitating aging Flight Service Station facilities throughout Alaska. With a budget of approximately $2 million annually, the initiative addresses structural repairs and environmental compliance to ensure the safety and continuity of operations for remote aviation services. 
+
+
 #### AWS Federal Cloud Services migration and refactor
 
 - **_Architect, Project Manager, Administrator_**  

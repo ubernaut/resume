@@ -3,23 +3,48 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/jpg" href="images/fav.ico" />
+    <link
+      rel="preload"
+      href="css/GohuFont14NerdFontMono-ResumeSubset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="css/JMHTypewriter.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="module" src="js/app.js"></script>
     <title>Colin Schroeder</title>
   </head>
-  <body id="body" class="crt">
+  <body id="body" class="crt is-loading">
     <script>
+      const themeParam = new URLSearchParams(window.location.search).get(
+        "theme"
+      );
+      const explicitTheme =
+        themeParam === "light" || themeParam === "dark" ? themeParam : null;
       document.body.classList.add(
-        window.matchMedia("(prefers-color-scheme: dark)").matches
+        explicitTheme ??
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
-          : "light"
+          : "light")
       );
     </script>
+    <div id="pageLoader" role="status" aria-live="polite">
+      <span class="loader-label">LOADING</span>
+      <span id="loaderBar" class="loader-bar">[------------]</span>
+    </div>
     <span
       id="togglebtn"
       onclick="window.toggleDark()"
       title="toggle light/dark mode"
+      hidden
     >
       <h3>☼</h3>
     </span>
-    <main>
+    <main id="resumeContent" aria-hidden="true" hidden>

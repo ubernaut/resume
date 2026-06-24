@@ -191,7 +191,8 @@
       0 0 3px;
   }
 }
-.crt.crt-active::after {
+.crt.crt-active::after,
+.crt.is-loading::after {
   content: " ";
   display: block;
   position: fixed;
@@ -227,13 +228,14 @@
     3px 100%;
   pointer-events: none;
 }
-.crt.crt-active {
+.crt.crt-active,
+.crt.is-loading {
   animation: textShadow 1.6s infinite;
 }
 
 @font-face {
   font-family: "Gohu";
-  src: url("GohuFont14NerdFontMono-Regular.ttf") format("truetype");
+  src: url("GohuFont14NerdFontMono-ResumeSubset.woff2") format("woff2");
 }
 @font-face {
   font-family: "typewriter";
@@ -248,10 +250,60 @@
   color: black;
 }
 .dark {
-  font-family: "Gohu";
+  font-family: "Gohu", "Courier New", monospace;
+  font-size: 1.08rem;
   color-scheme: dark;
   background-color: black;
   color: lightgreen;
+}
+
+.is-loading #togglebtn,
+.is-loading #resumeContent {
+  visibility: hidden;
+}
+
+#pageLoader {
+  align-items: center;
+  background: inherit;
+  bottom: 0;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", monospace;
+  gap: 0.5rem;
+  justify-content: center;
+  left: 0;
+  min-height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.dark #pageLoader {
+  font-family: "Gohu", "Courier New", monospace;
+}
+
+.is-ready #pageLoader {
+  display: none;
+}
+
+.loader-label,
+.loader-bar {
+  display: block;
+  line-height: 1;
+}
+
+.loader-label {
+  font-size: 1.25rem;
+}
+
+.loader-bar {
+  font-size: clamp(1.25rem, 8vw, 3rem);
+  letter-spacing: 0;
+  min-width: 14ch;
+  text-align: left;
+  white-space: nowrap;
 }
 
 #togglebtn {
@@ -263,6 +315,7 @@
 
 #togglebtn h3 {
   display: inline-block;
+  font-family: "typewriter", "Courier New", monospace;
   font-size: 3rem;
   line-height: 1;
   margin: 0 0 0.5rem;

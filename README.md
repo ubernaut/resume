@@ -9,7 +9,9 @@ This is a markdown to pdf and html resume pipeline.
 I use this to convert markdown files which contain my resume, employment history, and project history into both PDF and HTML formats for distribution.
 
 ## deps:
-sudo apt install pandoc texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra pdftk
+sudo apt install pandoc pdftk
+
+Install Google Chrome or Chromium for PDF rendering. The build script looks for `google-chrome`, `chromium`, or `chromium-browser` on `PATH`.
 
 ## to use:
 

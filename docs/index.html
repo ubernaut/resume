@@ -3,49 +3,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/jpg" href="images/fav.ico" />
+    <link
+      rel="preload"
+      href="css/GohuFont14NerdFontMono-ResumeSubset.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="css/JMHTypewriter.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="module" src="js/app.js"></script>
     <title>Colin Schroeder</title>
   </head>
-  <body id="body" class="crt">
+  <body id="body" class="crt is-loading">
     <script>
+      const themeParam = new URLSearchParams(window.location.search).get(
+        "theme"
+      );
+      const explicitTheme =
+        themeParam === "light" || themeParam === "dark" ? themeParam : null;
       document.body.classList.add(
-        window.matchMedia("(prefers-color-scheme: dark)").matches
+        explicitTheme ??
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
-          : "light"
+          : "light")
       );
     </script>
+    <div id="pageLoader" role="status" aria-live="polite">
+      <span class="loader-label">LOADING</span>
+      <span id="loaderBar" class="loader-bar">[------------]</span>
+    </div>
     <span
       id="togglebtn"
       onclick="window.toggleDark()"
       title="toggle light/dark mode"
+      hidden
     >
       <h3>☼</h3>
     </span>
-    <main>
-<h2 id="colin-schroeder---software-engineering-manager">Colin Schroeder
-- Software Engineering Manager</h2>
+    <main id="resumeContent" aria-hidden="true" hidden>
+<h2 id="colin-schroeder">Colin Schroeder</h2>
+<h3 id="software-engineering-manager">Software Engineering Manager</h3>
 <h2 id="education-experience">Education &amp; Experience</h2>
 <ul>
 <li>B.S. Computer Science 2017 - University of Alaska Anchorage</li>
-<li>4 years - IT Manager</li>
-<li>8 years - Software Engineering Lead</li>
-<li>18 years - Software Development</li>
-<li>20 years - IT</li>
+<li>5 years - IT Manager</li>
+<li>10 years - Software Engineering Lead</li>
+<li>20 years - Software Development</li>
+<li>25 years - IT</li>
 </ul>
 <h2 id="contact">Contact</h2>
-<p><a href="https://github.com/ubernaut">github.com/ubernaut</a></p>
-<p><a
-href="https://www.linkedin.com/in/collin-schroeder-b0a8909">linkedin</a></p>
-<p><a
+<p><a href="https://github.com/ubernaut">github.com/ubernaut</a> <a
+href="https://www.linkedin.com/in/collin-schroeder-b0a8909">linkedin</a><br />
+<a
 href="mailto:collin.schroeder+resume@gmail.com">collin.schroeder+resume@gmail.com</a></p>
+<h2 id="current-roles">Current Roles</h2>
+<ul>
+<li>Computer Engineer - FAA
+<ul>
+<li>AFSFM (Alaska Flight Service Facility Modernization) Program
+manager</li>
+<li>AAC (Alaska Automation Capability) Implementation Software SME</li>
+</ul></li>
+<li>COO - <a href="https://tsotchke.org">tsotchke.org</a></li>
+</ul>
 <h2 id="recent-accomplishments">Recent Accomplishments</h2>
 <ul>
+<li>Adapted and deployed <a
+href="https://chat.tsotchke.ai">chat.tsotchke.ai</a> to Google Cloud
+Platform and deployed to prod in 3 days with a scale to zero cloud
+native architecture based on cloud run.</li>
 <li>Led the migration from Google Cloud Platform to Amazon Web Services
 FAA Cloud Services (AWS FCS) for over 70 services</li>
 <li>Managed the IT infrastructure for the FAA Weather Camera Program
-Office (WCPO) with 955 first party cameras spread out across 255 sites
-owned by the program.</li>
+Office (WCPO) with 947 camera sites (305 FAA owned).</li>
 <li>Led the development of <a
 href="https://weathercams.faa.gov">weathercams.faa.gov</a> with 100,000
 users and 8 million pageviews per month.</li>
@@ -60,41 +97,41 @@ using Ansible.</li>
 <li>Developed and deployed a Progressive Web Application for <a
 href="https://weathercams.faa.gov">weathercams.faa.gov</a> dramatically
 reducing app size for repeated use.</li>
-<li>Successfully launched a 3rd party API to support dissemination of
+<li>Launched a 3rd party accessible API to support dissemination of
 camera images.</li>
 <li>Developed and obtained risk acceptance for a new visibility
 detection method using camera images in partnership with MIT LL.</li>
 <li>Developed a cutting edge 360 camera stitching interface leveraging
 WebGL reducing image stitching time from 10 min to 150ms enabling
 realtime image stitching from 4k camera feeds in the browser.</li>
-<li>Developed a WebXR game using Three.js in under a month.</li>
 </ul>
 <h2 id="goals">Goals</h2>
 <p>I'm looking for a leadership role on an ambitious team who is
 anticipating how current trends and technology will shape the world.
-Let's build the future!</p>
+Let's build the best possible future!</p>
 <p>I work best in domains I am passionate, for leaders with ambitious
 vision, and in organizations where top performers have latitude.</p>
 <p>I like working on projects simultaneously, where I am creating and
-developing proofs of concept into full featured products.</p>
-<p>I'm interested in aerospace, VR, WebXR, WebGPU, Web3, distributed
-computing, crypto, decentralized services and protocols, computational
-physics, Open Source, entrepreneurship, and rocking the boat.</p>
+developing proofs of concept and then honing them into full featured
+products.</p>
 <h2 id="technology-and-concepts-id-like-to-work-with">Technology and
 concepts I'd like to work with</h2>
-<p>Aerospace, Virtual Reality, Open Source Infrastructure,
-Infrastructure as code, Terraform, docker, keycloak, kubernetes,
-node.js, ECMA2016, react, three.js, WebXR, Postgres, Service Oriented
-Architectures, Progressive Web Applications, Cloud Native Architectures,
-Cloud Portable Architectures, Scalability and Optimization, Leadership,
-Strategy, CICD, DevOps, DevSecOps, zero trust, High Performance image
-stitching, Ubuntu</p>
+<p>Aerospace, Machine Learning, computational physics, simulation, HPC,
+WebGPU, distributed computing, three.js, Virtual Reality, deno, WebXR,
+Leadership, Strategy, Linux</p>
 <h1 id="employment-history">Employment History</h1>
 <h3 id="federal-aviation-administration-may-2020---present">Federal
 Aviation Administration (May 2020 - Present)</h3>
-<p>Worked as the IT lead managing simultaneous software projects and
-operations of the camera network, websites, and infrastructure required
-to support them.</p>
+<p>Current AFSFM Program Manager and Software SME for AAC Previously
+Worked as the IT manager for WCAMS managing simultaneous software
+projects and operations of the camera network, websites, and
+infrastructure required to support them.</p>
+<h3 id="tsotchke-corporation-jan-2026---present">Tsotchke Corporation
+(Jan 2026 - Present)</h3>
+<p>COO and Engineering Manager. Roles include Managing projects and
+daily operations for a budding startup. Several ambitious projects
+surrounding machine learning, programming language development, quantum
+computing, distributed high performance architecture etc.</p>
 <h3 id="leidos-march-2016---may-2020">Leidos (March 2016 - May
 2020)</h3>
 <p>Worked as a consultant for the F.A.A. Weather Camera Program Office.
@@ -124,6 +161,29 @@ Macro implementation, and assistant administrator of Bentley Document
 Databases.</p>
 <h1 id="project-history">Project History</h1>
 <h2 id="faa">FAA</h2>
+<h4 id="aac-alaska-automation-capability">AAC (Alaska Automation
+Capability))</h4>
+<ul>
+<li><strong><em>Software SME, Implementation</em></strong> The Alaska
+Automation Capability (AAC) is a Federal Aviation Administration (FAA)
+initiative designed to modernize the software and technical
+infrastructure of Alaska's Flight Service Stations. Conducted as part of
+the broader plan for a Brand-New Air Traffic Control System (BNATCS),
+its primary objective is to replace the state's highly vulnerable,
+legacy Operational and Supportability Implementation System (OASIS) with
+a secure, web-based cloud automation network.</li>
+</ul>
+<h4 id="afsfm-alaska-flight-service-facility-modernization">AFSFM
+(Alaska Flight Service Facility Modernization)</h4>
+<ul>
+<li><strong><em>Program Manager, GTI</em></strong> The Alaska Flight
+Service Facility Modernization (AFSFM) program, is a Federal Aviation
+Administration infrastructure project focused on rehabilitating aging
+Flight Service Station facilities throughout Alaska. With a budget of
+approximately $2 million annually, the initiative addresses structural
+repairs and environmental compliance to ensure the safety and continuity
+of operations for remote aviation services.</li>
+</ul>
 <h4 id="aws-federal-cloud-services-migration-and-refactor">AWS Federal
 Cloud Services migration and refactor</h4>
 <ul>
