@@ -19,9 +19,13 @@ geometry: margin=1cm
 
 ## Current Roles
 - Computer Engineer - FAA
-    - AFSFM (Alaska Flight Service Facility Modernization) Program manager
-    - AAC (Alaska Automation Capability) Implementation Software SME
-- COO - [tsotchke.org](https://tsotchke.org)
+    - AFSFM (Alaska Flight Service Facility Modernization)
+        - Program manager
+    - AAC (Alaska Automation Capability) 
+        - Implementation Lead
+        - Software SME
+- [tsotchke.org](https://tsotchke.org)
+    - COO
 
 ## Recent Accomplishments
 - Adapted and deployed [chat.tsotchke.ai](https://chat.tsotchke.ai) to Google Cloud Platform and deployed to prod in 3 days with a scale to zero cloud native architecture based on cloud run. 
