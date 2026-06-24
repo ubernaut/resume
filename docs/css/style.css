@@ -191,7 +191,7 @@
       0 0 3px;
   }
 }
-.crt::after {
+.crt.crt-active::after {
   content: " ";
   display: block;
   position: fixed;
@@ -227,7 +227,7 @@
     3px 100%;
   pointer-events: none;
 }
-.crt {
+.crt.crt-active {
   animation: textShadow 1.6s infinite;
 }
 
@@ -243,19 +243,29 @@
 .light {
   font-family: "typewriter";
   /* background: radial-gradient(circle at calc(50% + 12vmin) calc(50% - 4vmin), #fff 29vmin, #eee); */
+  color-scheme: light;
   background-color: white;
   color: black;
 }
 .dark {
   font-family: "Gohu";
+  color-scheme: dark;
   background-color: black;
   color: lightgreen;
 }
 
 #togglebtn {
   cursor: pointer;
+  display: block;
   position: relative;
   text-align: right;
+}
+
+#togglebtn h3 {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0 0 0.5rem;
 }
 
 /* section {
