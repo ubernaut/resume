@@ -9,7 +9,7 @@ geometry: margin=1cm
 
 #### AAC (Alaska Automation Capability))
 
-- **_Software SME, Implementation_**  
+- **_Software SME, Implementation Lead_**  
   The Alaska Automation Capability (AAC) is a Federal Aviation Administration (FAA) initiative designed to modernize the software and technical infrastructure of Alaska's Flight Service Stations. Conducted as part of the broader plan for a Brand-New Air Traffic Control System (BNATCS), its primary objective is to replace the state's highly vulnerable, legacy Operational and Supportability Implementation System (OASIS) with a secure, web-based cloud automation network.
 
 
