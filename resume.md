@@ -22,7 +22,6 @@ geometry: margin=1cm
     - AFSFM (Alaska Flight Service Facility Modernization)
         - Program manager
     - AAC (Alaska Automation Capability) 
-        - Implementation Lead
         - Software SME
 - [tsotchke.org](https://tsotchke.org)
     - COO
